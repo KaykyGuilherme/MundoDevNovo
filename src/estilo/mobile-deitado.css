@@ -78,7 +78,7 @@
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        width: 50%;
+        width: 55%;
     }
 
     .tecnologias-info h3:first-child{
@@ -89,8 +89,8 @@
 
     .tecnologias-info ul{
         display:    block;
-        width: 50%;
-        font-size: 1.1rem;
+        width: 60%;
+        font-size: 1rem;
         margin: 0 auto;
     }
 
