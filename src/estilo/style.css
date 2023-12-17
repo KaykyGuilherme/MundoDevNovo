@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+:root{
+    --text-color: #fff;
+    --principal: #00d5ff;
+    --segundario: #45AAFC;
+    --outros: #5932C9;
+    --fundo: #152151;
+    --botao: #2ba86a;
+}
+
+
+.headline{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("../img/wallpaper-1.webp") 
+    no-repeat 
+    center/cover;
+    color: var(--text-color);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+    height: 93vh;
+}
+
+.headline .headline-text{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: center;
+}
+
+.headline-text h1{
+    color: var(--principal);
+    text-shadow: 0 0 2px var(--principal),
+                 2px 1px var(--outros),
+                 2px 1px 5px var(--outros);
+    font-size: 2.3rem;
+}
+
+.headline-text h2{
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.headline-text p{
+    text-align: justify;
+    padding: .5rem 0;
+    font-weight: 400;
+}
+
+.data{
+    background: var(--fundo);
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, .5);
+}
+
+.data p{
+    padding: 0;
+}
+
+.data p:first-child{
+    color: var(--text-color);
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.data p:last-child{
+    width: 18.9rem;
+    font-weight: 500;
+}
+
+
+.headline-fom{
+    background: var(--outros);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, .5);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: .6rem;
+}
+
+.headline-fom h2{
+    font-weight: 300;
+    width: 16.6rem;
+}
+
+.headline-fom form{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.headline-fom form div{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: .6rem;
+}
+
+.headline-fom form div input{
+    padding: .4rem;
+    border-radius: .2rem;
+    border: none;
+}
+
+.headline-fom form .bnt{
+    background: var(--botao);
+    color: var(--text-color);
+    border: none;
+    padding: .5rem 0;
+    border-radius: .2rem;
+    font-weight: 400;
+}
+
+.bolhas h2{
+    text-align: center;
+    background: var(--fundo);
+    text-transform: capitalize;
+    color: var(--text-color);
+    padding: .3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.bolhas-container{
+    background: var(--text-color);
+    color: var(--fundo);
+    padding: .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.bolhas-container .bolha{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.bolhas-container img{
+    height: 200px; width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .3);
+}
+
+.bolhas-container h3{
+    width: 12rem;
+    text-align: center;
+}
+
+.local{
+    background: linear-gradient(rgb(0, 0, 0, .8), rgb(0, 0, 0, .8)),
+    url("../img/programadores-juntos.jpg") 
+    no-repeat 
+    center/cover;
+    color: var(--text-color);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .8rem 0;
+}
+
+.local h2{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: var(--segundario);
+    text-shadow: 2px 2px var(--fundo);
+    font-weight: 800;
+}
+
+.local .local-info i{
+    font-size: 1.8rem;
+    color: var(--segundario);
+    text-shadow: 2px 2px var(--fundo);
+}
+
+.local .local-info p{
+    font-weight: 700;
+
+    font-size: 1.1rem;
+    box-shadow: 0 0 5px rgb(0, 0, 0, .3);
+}
+
+.tecnologias{
+    padding: .7rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tecnologias img{
+    width: 95%;
+    box-shadow: 0 0 4px rgb(0, 0, 0, .4);
+}
+
+.tecnologias h2{
+    margin: 0 10%;
+    font-size: 2.5rem;
+}
+
+.tecnologias h3:first-child{
+    width: 13rem;
+}
+
+.tecnologias h3{
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+
+.tecnologias ul{
+    list-style-position: inside;
+    width: 50vw;
+    font-size: 1rem;
+}
+
+.gostou{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("../img/wallpaper-1.webp")
+    no-repeat
+    center/cover;
+    padding: 1.5rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.gostou p{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.gostou button{
+    background: var(--botao);
+    color: var(--text-color);
+    border: none;
+    width: 50%;
+    padding: 1rem 0;
+    border-radius: 13px;
+    font-size: 4vw;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+footer{
+    background: var(--text-color);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    opacity: .5;
+    width: 100%;
+}
+
+footer span{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+footer p{
+    font-size: 100%;
+}
